@@ -47,6 +47,10 @@ p {
 	font-size: 1.5rem;
 }
 
+a:hover {
+	color: white;
+}
+
 .myphoto {
 	border-radius: 50%;
 	width: 15%;
