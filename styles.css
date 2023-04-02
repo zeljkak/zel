@@ -25,11 +25,6 @@ h2 {
 	color: #C39163; 
 }
 
-h3 {
-	font-family: 'Quicksand', sans-serif;
-
-}
-
 hr {
 	border-color: #f2c194;
     border-style: dotted none none;
@@ -62,9 +57,10 @@ a:hover {
 }
 
 .top_cont {
-
+	position: relative;
 	padding: 20px;
 	padding-top: 100px;
+	max-width: 100%;
 }
 
 .mid_cont {
@@ -80,14 +76,18 @@ a:hover {
 .top_cloud {
 	position: absolute;
 	right: 210px;
-	top: 45px;
+	top: 50px;
 
 }
 
 .bottom_cloud {
 	position: absolute;
 	left: 180px;
-	bottom: 300px;
+	bottom: 330px;
+}
+
+.mountain {
+	max-width: 100%;
 }
 
 .btn {
@@ -108,4 +108,45 @@ a:hover {
 .footer {
 	font-size: 0.9rem;
 	color: white;
+}
+
+@media all and (min-width: 320px) and (max-width: 440px) {
+	.top_cloud {
+		right: 210px;
+		top: 50px;
+	}
+	.bottom_cloud {
+		position: absolute;
+		left: 180px;
+		top: 150px;
+	}
+	.top_cont {
+		max-width: 100%;
+	}
+	.myphoto {
+		width: 30%;
+	}
+	h1 {
+		font-size: 6.5rem;
+	}
+	h2 {
+		font-size: 3.2rem;
+	}
+	p {
+		font-size: 2.5rem;
+	}
+	.skillphoto {
+		width: 20%;
+	}
+	.btn {
+		font-size: 2.3rem;
+	}
+	.linkedin {
+		font-size: 2.5rem;
+	}
+	.footer {
+		font-size: 1.8rem;
+	}
+
+
 }
